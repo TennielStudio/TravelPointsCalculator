@@ -1,5 +1,6 @@
 #include <iostream>
 #include "AwardPointsCalc.hpp"
+#include "HotelPointsCalc.hpp"
 
 using namespace std;
 
@@ -16,6 +17,10 @@ int main()
         AwardPointsCalculator flightCalculator; // create the object for the flight calculator
         flightCalculator.CalculateFlightValue();
     }
-
+    else if (isFlight == "no")
+    {
+        HotelPointsCalculator hotelCalculator; // create the object for the hotel calculator
+        hotelCalculator.CalculateHotelPoints();
+    }
     return 0;
 }
